@@ -83,7 +83,9 @@ const sum_exercises_completed  = explorers.reduce((acc,sum) => acc + sum.exercis
 console.log(sum_exercises_completed)
 
 // 7.-Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
-const exerciseFinished = explorers.some((explorerFinished) => explorerFinished.missions.frontend.exercisesFinished === true)
-console.log(exerciseFinished)
+const exercise_Finished = explorers.some((explorerFinished) => explorerFinished.missions.frontend.exercisesFinished === true)
+console.log(exercise_Finished)
 
 // 8.-Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY.
+const is_finished = explorers.every((explorer_is_finished) => explorer_is_finished.missions.onboarding.isFinished === true)
+console.log(is_finished)
