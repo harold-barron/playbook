@@ -61,10 +61,11 @@ const explorers = [
 
 // Exercises
 // 1.-Imprime el nombre (propiedad name) de cada explorer en la lista, usa FOR EACH
+
 explorers.forEach(expName => console.log(expName.name))
 
-
-// Imprime el stack de cada explorer, usa FOR EACH
+// 2.Imprime el stack de cada explorer, usa FOR EACH
+explorers.forEach(expStack => console.log(expStack.stack))
 // Crea una nueva lista con las listas de stacks de cada explorer, usa MAP
 // Obtén la lista de explorers que tengan en su stack "js", usa FILTER (para validar un elemento en un lista se usa el método includes)
 // Busca el primer explorer que sea de la CDMX, usa FIND
