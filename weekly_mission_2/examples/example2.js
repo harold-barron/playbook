@@ -61,13 +61,17 @@ const explorers = [
 
 // Exercises
 // 1.-Imprime el nombre (propiedad name) de cada explorer en la lista, usa FOR EACH
-
 explorers.forEach(expName => console.log(expName.name))
 
 // 2.Imprime el stack de cada explorer, usa FOR EACH
 explorers.forEach(expStack => console.log(expStack.stack))
-// Crea una nueva lista con las listas de stacks de cada explorer, usa MAP
+
+// 3.-Crea una nueva lista con las listas de stacks de cada explorer, usa MAP
+const explorerStack=explorers.map(ExplorerStackNewList => ExplorerStackNewList.stack)
+console.log(explorerStack)
+
 // Obtén la lista de explorers que tengan en su stack "js", usa FILTER (para validar un elemento en un lista se usa el método includes)
+
 // Busca el primer explorer que sea de la CDMX, usa FIND
 // Obtén la suma de todos los exercises_completed, usa REDUCE
 // Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
