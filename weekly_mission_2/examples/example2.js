@@ -81,5 +81,9 @@ console.log(FirstExplorerCdmx)
 // 6.- Obtén la suma de todos los exercises_completed, usa REDUCE
 const sum_exercises_completed  = explorers.reduce((acc,sum) => acc + sum.exercises_completed,0)
 console.log(sum_exercises_completed)
-// Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
-// Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY.
+
+// 7.-Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
+const exerciseFinished = explorers.some((explorerFinished) => explorerFinished.missions.frontend.exercisesFinished === true)
+console.log(exerciseFinished)
+
+// 8.-Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY.
